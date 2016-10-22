@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/**
+ * @description: 通用css
+ * @author: ymb
+ * @update: (2016-07-25)
+ */
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1;
+    font-family: "Microsoft Yahei", Verdana, Simsun, "Segoe UI Web Light", "Segoe UI Light", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+}
+
+html {
+    font-size: 32px;
+}
+
+@media screen and (min-width:260px) {
+    html {
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:320px) {
+    html {
+        font-size: 34px;
+    }
+}
+@media screen and (min-width:380px) {
+    html {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:440px) {
+    html {
+        font-size: 46px;
+    }
+}
+@media screen and (min-width:500px) {
+    html {
+        font-size: 52px;
+    }
+}
+@media screen and (min-width:560px) {
+    html {
+        font-size: 58px;
+    }
+}
+@media screen and (min-width:620px) {
+    html {
+        font-size: 64px;
+    }
+}
+ul li {list-style: none;}
+.clear {
+    clear: both;
+}
+h1.email-header {
+    font-size: 0.5rem;
+    margin: 0.5rem 0.4rem 0.4rem;
+}
+.remark-cont {
+    font-size: 0.25rem;
+    margin-bottom: 0.35rem;
+    margin-left: 0.4rem;
+}
+.remark-cont span {
+    display: inline-block;
+    padding: 2px 0.25rem;
+    margin-right: 0.125rem;
+    margin-bottom: 0.125rem;
+    border-radius: 0.2rem;
+    color: rgb(101,135,217);
+    border: 1px solid rgb(101,135,217);
+}
+
+.sender-info {
+    border-bottom: 1px solid rgb(242,242,242);
+    padding: 0 0.4rem 0.45rem 0.4rem;
+}
+.sender-info .sender-img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.2rem;
+    float: left;
+    background-size: 100% 100%;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.sender-name {
+    font-size: 0.5rem;
+    margin-bottom: 0.15rem
+}
+.sender-handle {
+    overflow: hidden;
+}
+.sender-eml {
+    float: left;
+    margin-right: 0.5rem;
+    font-size: 0.4rem;
+    color: rgb(153,153,153);
+}
+.sender-encl {
+    float: left;
+    font-size: 0.35rem;
+}
+.sender-encl span {
+    float: left;
+    display: inline-block;
+}
+.sender-encl span.sender-encl-text {
+    margin-left: 0.15rem;
+    padding-top: 0.02rem;
+}
+.enclosure {
+    display: none;
+}
+.btn-detail {
+    float: right;
+    margin-top: 0.06rem;
+    font-size: 0.4rem;
+    color: rgb(77,153,245);
+}
+
+.sender-detail  {
+    overflow:hidden;
+    padding: 0.4rem;
+    border-bottom: 1px solid rgb(243,243,243);
+    transtion: height 1s;
+    -webkit-transition: height 1s;
+}
+.sender-detail dl {
+    overflow: hidden;
+    margin-bottom: 0.35rem
+}
+.sender-detail dt {
+    float: left;
+    width: 1.4rem;
+    margin-right: 0.3rem;
+    font-size: 0.4rem;
+    color: rgb(153,153,153);
+    text-align: right;
+}
+.sender-detail dd {
+    float: left;
+    font-size: 0.35rem;
+}
+.traces-list {
+    display: none;
+}
+.user-name {
+    margin-bottom: 0.1rem;
+}
+.user-email {
+    color: rgb(153,153,153);
+}
+.email-detail {
+    font-size: 0.35rem;
+    padding: 0.4rem;
+    text-align: justify;
+    overflow-x: auto;
+}
+.email-detail-inner {
+    position: absolute;
+}
+
+#footer {
+    margin-bottom: 1.3rem;
+}
+.sender-contact {
+    width: 5rem;
+    margin-left: 0.4rem;
+    margin-bottom: 0.6rem;
+    border-top: 1px solid rgb(153,153,153);
+    padding-top: 0.2rem;
+    font-size: 0.4rem;
+}
+.sender-contact > * {
+    margin-bottom: 0.1rem;
+}
+.sender-contact h3 {
+    font-weight: normal;
+}
+.sender-tel {
+    color: rgb(77,153,245);
+}
+.sender-eml2 {
+    color: rgb(77,153,245);
+}
+
+.doc-content {
+    margin: 0 0.5rem 0.5rem;
+    padding: 0.2rem;
+    border: 1px solid rgb(243,243,243);
+    border-radius: 0.0625rem;
+    font-size: 0.35rem;
+}
+.doc-img {
+    float: left;
+    margin-right: 0.8em;
+}
+.doc-img img {
+    width: 6rem;
+    height: 0.6rem;
+}
+.doc-name {
+    float: left;
+    padding-top: 0.125rem;
+    color: rgb(77,153,245);
+    margin-right: 0.2rem;
+}
+.doc-size {
+    float: left;
+    padding-top: 0.125rem;
+    color: rgb(153,153,153);
+}
+.doc-handle-cont {
+    float: right;
+    position: relative;
+}
+.btn-doc {
+    display: inline-block;
+    padding-top: 0.125rem;
+    color: rgb(77,153,245);
+}
+.doc-handle {
+    display: none;
+    position: absolute;
+    bottom: 0.8rem;
+    right: -0.2rem;
+    width: 2.5rem;
+    padding: 0.2rem 0;
+    background-color: rgb(75,115,235);
+    text-align: center;
+    transtion: all 0.5s;
+    -webkit-transtion: all 0.5s;
+}
+.doc-handle li {
+    padding: 0.2rem;
+    color: rgb(255,255,255);
+}
