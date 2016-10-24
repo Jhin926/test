@@ -78,7 +78,7 @@
             </div>
         </section>
         <section class="email-detail" id="email-content">
-
+			<div id="email-content-inner" class="email-detail-inner"></div>
         </section>
     </article>
     <footer id="footer">
@@ -293,9 +293,13 @@
                 document.querySelector('#traces').innerHTML = traList;
             }
 
-            document.querySelector('#email-content').innerHTML = data.content;
-
-
+            document.querySelector('#email-content-inner').innerHTML = data.content;
+			
+			var factWidth = document.querySelector('#email-content-inner').offsetWidth;
+			var contentWidth = document.querySelector('#email-content').offsetWidth;
+			var scaleVal = contentWidth/factWidth;
+			document.querySelector('#email-content-inner').style.transform="scale("+(scaleVal-0.05)+","+(scaleVal-0.05)+")";
+			document.querySelector('#email-content-inner').style.transformOrigin="0 0";
         }
     }
     xmlhttp.open('get', '/api/email/v1/detail'+getInfo, true);
