@@ -23,13 +23,13 @@
 	connectWebViewJavascriptBridge(function(bridge) {
 		document.getElementById('ymb').onclick = function(){
 			alert(1);
-			bridge.callHandler('sendEmail', {'foo': 'bar'}, function(response){
+			bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response){
 				alert(response);
 			});
 		}
 		document.getElementById('ymb1').onclick = function () {
 			alert(2);
-			bridge.callHandler('loadAttachment', {'foo': 'bar'}, function(response) {
+			bridge.callHandler('testObjcCallback', {'foo': 'bar'}, function(response) {
 				alert(response);
 			})
 		}
