@@ -89,8 +89,8 @@
     </footer>
 </div>
 <script>
-var a = document.getElementsByTagName('html')[0];
-alert(window.getComputedStyle(a).fontSize);
+	var screenWidth = screen.width;
+	document.getElementsByTagName('html')[0].style.fontSize = (screen.width / 10) + 'px';
     //与ios交互方法
     function setupWebViewJavascriptBridge(callback) {
         if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
