@@ -85,6 +85,7 @@
     </footer>
 </div>
 <script>
+alert(document.getElementsByTagName('html').style.fontSize);
     function setupWebViewJavascriptBridge(callback) {
         if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
         if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
