@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* 基础底层样式表 */
+html{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+body{margin:0; background:#313338; overflow-x:hidden}
+html,
+body{height:100%; font-family:"微软雅黑","黑体" ;font-size:15px;}
+a, b, div, em, input, ul, i, span, label, p, button, li, form, textarea, h1, h2, h3, h4, h5{box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+ul{list-style:none; padding:0; margin:0}
+img{border:none;}
+h1, h2, h3, h4, h5{margin:0; font-weight:normal}
+input, textarea{background:none; border:none;outline:none; font-size:13px; font-family:"微软雅黑","黑体";}
+a:link, a:visited, a:hover, a:active{text-decoration:none; color:#fff;}
+strong{font-weight:normal}
+
+@font-face{font-family:'FontAwesome'; src:url('../fonts/fontawesome-webfont.eot?v=4.5.0'); src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg'); font-weight:normal; font-style:normal;}
+.fa{display:inline-block; font:normal normal normal 14px/1 FontAwesome; font-size:inherit; text-rendering:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+.fa-pie-chart:before{content:"\f200";}
+.fa-dollar:before{content:"\f155";}
+.fa-user:before{content:"\f007";}
+.fa-cogs:before{content:"\f085";}
+.fa-tachometer:before{content:"\f0e4";}
+.fa-database:before{content:"\f1c0";}
+.fa-area-chart:before{content:"\f1fe";}
+.fa-sitemap:before{content:"\f0e8";}
+
+/*栅格模块*/
+.row{width: 100%;display: block;float: left;}
+.col{float: left;padding: 0 10px;}
+.col-1{width: 100%;}
+.col-2{width: 50%;}
+.col-3{width: 33.3333333%;}
+.col-4{width: 25%;}
+.col-5{width: 20%;}
+.col-10{width: 10%;}
+.padding0{padding: 0}
+
+/*颜色*/
+.color1{background-image: -moz-linear-gradient( 103deg, rgb(130,17,17) 0%, rgb(182,51,51) 100%);background-image: -webkit-linear-gradient( 103deg, rgb(130,17,17) 0%, rgb(182,51,51) 100%);background-image: -ms-linear-gradient( 103deg, rgb(130,17,17) 0%, rgb(182,51,51) 100%);}
+.color2{background-image: -moz-linear-gradient( 103deg, rgb(68,9,119) 0%, rgb(116,32,188) 100%);background-image: -webkit-linear-gradient( 103deg, rgb(68,9,119) 0%, rgb(116,32,188) 100%);background-image: -ms-linear-gradient( 103deg, rgb(68,9,119) 0%, rgb(116,32,188) 100%);}
+.color3{background-image: -moz-linear-gradient( 103deg, rgb(0,61,102) 0%, rgb(0,51,85) 100%);background-image: -webkit-linear-gradient( 103deg, rgb(0,61,102) 0%, rgb(0,51,85) 100%);background-image: -ms-linear-gradient( 103deg, rgb(0,61,102) 0%, rgb(0,51,85) 100%);}
+.color4{background-image: -moz-linear-gradient( 103deg, rgb(44,26,108) 0%, rgb(84,69,140) 100%);background-image: -webkit-linear-gradient( 103deg, rgb(44,26,108) 0%, rgb(84,69,140) 100%);background-image: -ms-linear-gradient( 103deg, rgb(44,26,108) 0%, rgb(84,69,140) 100%);}
+
+/*背景*/
+.bg-box{padding:15px;background: url('../img/big-box-bg.png') center center;background-size: cover;}
+.bg-box1, .bg-box2, .color-box{height: 320px;padding:15px;}
+.bg-box1, .bg-box2, .color-box, .bg-box{box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)}
+.bg-box1{background: url('../img/small-box-bg2.png') center center;background-size: cover;}
+.bg-box2{background: url('../img/small-box-bg.png') center center;background-size: cover;}
+
+/*总盒子*/
+.boxes{background-image:-moz-linear-gradient( 90deg, rgb(8,7,26) 0%, rgb(26,25,44) 55%, rgb(44,43,61) 100%);background-image: -webkit-linear-gradient( 90deg, rgb(8,7,26) 0%, rgb(26,25,44) 55%, rgb(44,43,61) 100%);background-image: -ms-linear-gradient( 90deg, rgb(8,7,26) 0%, rgb(26,25,44) 55%, rgb(44,43,61) 100%);width:100%;min-height:1600px;position:relative;}
+
+/*左边导航栏*/
+.left-box{width:180px;height:100%;position:fixed;top:0;left:0;background:#fff;z-index:23}
+.left-logo{width: 180px;height: 65px;margin-bottom: 10px;background:url(../img/logo.png) no-repeat;margin:10px 0 10px 0;background-size:180px 65px;}
+.left-logo a{width: 180px;height: 65px;display: block;text-indent: -300em}
+.left-nav{height:auto;overflow:hidden;}
+.left-nav li{width:180px;height:60px;text-align:center;padding:10px 0 0 0;margin-top:10px;float:left;position:relative;font-size:18px;line-height:40px;-webkit-transition: 1s;transition: 1s;-o-transition: 1s;-moz-transition: 1s;}
+.left-nav li:hover{background:#f9f6e8}
+.left-nav li .fa{margin-right:5px;line-height:40px}
+.left-nav li a{display:block;width:180px;height:60px;color:#000 !important;text-decoration:none;}
+.left-nav li a:hover{color:#000 !important;text-decoration:none;}
+.left-nav li.active{background:#ffd50f;-moz-box-shadow: 2px 0 4px #aeaeae;-webkit-box-shadow: 2px 0 4px #aeaeae;box-shadow: 2px 0 4px #aeaeae;-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aeaeae')";filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#aeaeae');}
+.left-triangle{border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:10px solid #000;position:absolute;top:20px;right:0}
+
+/*右边模块*/
+.right-box{padding-left:180px;position:relative;right:0;top:0;z-index:1;padding-bottom:120px;}
+/*右边顶部导航信息*/
+.top-nav{width:100%;height:70px;background:#561fa0;box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);position: fixed;z-index:22;left:0;padding-left: 180px;top: 0}
+.top-nav .col{height: 70px;}
+.top-nav .exit-system{text-align: right;}
+.top-nav .col-5{text-align: center;}
+.top-nav span{line-height:70px;padding-right:10px;color: #d2b4fa;}
+.top-nav .col-2{text-align: center;}
+.top-nav strong{font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff;font-weight: bolder;height: 70px;line-height: 70px;word-spacing: 0.3em;letter-spacing: 0.3em;}
+.top-nav .message{line-height:70px;font-size:18px;display:inline-block}
+.top-nav .exit{display:inline-block;border-radius:5px;padding:5px 15px;text-align:center;background:#AC2F31;color:#fff;font-size:14px;margin-top:18px;cursor:pointer;-webkit-transition: 0.5s;transition: 0.5s;-o-transition: 0.5s;-moz-transition: 0.5s;border-bottom:3px solid #881315;min-height: 30px;height: 30px;}
+.top-nav .exit i{margin-right:5px;}
+.top-nav .exit:hover{background:#881315}
+
+/*右边内容主体*/
+.right-container{width: 100%;position: relative;top:100px;padding: 0px; top: 70px}
+
+/*右边按钮*/
+.btn-box{width:100%;margin-top:30px;text-align:center;float: left;}
+.normal-btn{padding:5px 15px;text-align:center;border-radius:10px;background:#ffc40f;color:#000 !important;border-bottom:3px solid #cc9f14;display:inline-block;margin:0 5px;font-size:15px;}
+.normal-btn:hover{background:#cc9f14}
+
+/*右边图表总*/
+.right-cont-m{color: #fff;font-size: 16px;height: auto;overflow: hidden;}
+.right-cont-m span{height: 80px;line-height: 80px;display: block;text-align: left;}
+.right-cont-m span a{padding: 5px 15px;border-radius: 5px;color: #000;margin-left: 10px;font-size: 14px;}
+.right-cont-m .color-box{position: relative;}
+.right-cont-m .chart{width:100%; height:520px; padding-left:15px;}
+.chart_box{margin-top: 50px;}
+.pie-chart{height: 260px}
+.line-chart{height: 500px}
+.chart-container .bg-box{height: 466px;}
+.chart-container .bg-box2,
+.chart-container .bg-box1{height: 233px;}
+.chart-container .mup30{margin-top: 30px;}
+#line1, #line2, #line3{height: 450px;margin-top: -20px}
+#pie1, #pie2, #bar1, #bar2{height: 200px;}
+#pie3, #pie4, #pie5{height: 230px}
+
+/*表格*/
+.table{width: 100%;position:fixed;padding-left: 180px;z-index: 10;bottom: -300px;}
+.table .table-nav{width: 100%;height: 400px;padding: 10px;box-shadow: 0 10px 10px 0 rgba(0,0,0,0.8);}
+.table .table-nav .table-tips{width: 100%;height: 50px;line-height: 50px;border-radius: 5px 5px 0 0;background: #ffae00;border-bottom: 1px solid #c5c5c5;text-align: center;cursor: pointer;}
+.table .table-nav .table-cot{width: 100%;height: 350px;overflow: auto;background:#eaeaea;padding-bottom: 30px;}
+.table .table-nav .table-cot table{width: 100%;border-collapse:collapse ;font-size: 14px}
+.table .table-nav .table-cot table thead,
+.table .table-nav .table-cot table tbody tr{height: 35px;line-height: 35px;font-weight: normal;border-bottom: 1px solid #ccc}
+.table .table-nav .table-cot table tbody tr td{text-align: center;}
+
+/*资产配置优化向导*/
+.table .table-nav .table{border-collapse: collapse;}
+.comp{border-right:1px solid #ccc}
